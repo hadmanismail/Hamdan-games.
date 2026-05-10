@@ -2,135 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Downloads by Hamdan Ismail</title>
+
     <style>
-        body {
-            background: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
         }
 
-        h1, h2, h3 {
-            text-align: center;
+        body{
+            background: radial-gradient(circle at top, #1a1a2e, #000);
+            color:white;
         }
 
-        .game-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 30px 0;
-            border: 1px solid #444;
-            padding: 20px;
-            border-radius: 10px;
-            flex-wrap: wrap;
+        h1{
+            text-align:center;
+            padding:25px;
+            font-size:32px;
+            background: linear-gradient(90deg,#ff004c,#2b2bff);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
         }
 
-        .game-section img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            max-width: 100%;
+        .search-bar{
+            text-align:center;
+            margin:20px;
         }
 
-        .game-info {
-            margin-left: 30px;
-            max-width: 600px;
+        .search-bar input{
+            width:80%;
+            max-width:500px;
+            padding:12px;
+            border-radius:10px;
+            border:none;
+            outline:none;
         }
 
-        a {
-            color: #00ffff;
-            text-decoration: none;
+        .game-section{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:20px;
+            margin:25px;
+            padding:20px;
+            background: rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:15px;
+            transition:0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .game-section:hover{
+            transform:scale(1.02);
+            box-shadow:0 0 20px rgba(0,255,255,0.2);
         }
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
+        .game-section img{
+            width:280px;
+            border-radius:12px;
         }
 
-        @media (max-width: 768px) {
-            .game-section {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        .game-info{
+            flex:1;
+            min-width:250px;
+        }
 
-            .game-info {
-                margin-left: 0;
-                margin-top: 20px;
+        .game-info h2{
+            margin-bottom:10px;
+            color:#00ffff;
+        }
+
+        .game-info h3 a{
+            display:inline-block;
+            margin:10px 0;
+            padding:10px 15px;
+            background:#ff004c;
+            color:white;
+            border-radius:8px;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        .game-info h3 a:hover{
+            background:#ff3366;
+        }
+
+        .box{
+            margin-top:10px;
+            padding:10px;
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius:10px;
+            background:rgba(0,0,0,0.4);
+            font-size:13px;
+            line-height:1.5;
+        }
+
+        .footer{
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+            background:#111;
+        }
+
+        @media(max-width:768px){
+            .game-section{
+                flex-direction:column;
+                text-align:center;
             }
         }
     </style>
 </head>
 <body>
 
-    <h1>Website by Hamdan Ismail</h1>
+<h1>🎮 Game Downloads by Hamdan Ismail</h1>
 
-    <!-- GTA V Section -->
-    <div class="game-section">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V Cover">
-        <div class="game-info">
-            <h2>Grand Theft Auto V</h2>
-            <h3><a href="https://steamunlocked.net/8dc7134-grand-theft-auto-v-free-v4-download" target="_blank">Download GTA V | Rockstar Games</a></h3>
-            <p>This is a direct download link for Grand Theft Auto V. Scroll down and click on "Download". System requirements will be on the page.</p>
-            <p>To download: wait 15 seconds, then click on "Free Download". If it's a Heaven Uploads link, proceed. If not, close the tab and try again.</p>
-            <p>Contact: <strong>abhahaft60@gmail.com</strong></p>
-        </div>
-    </div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a game...">
+</div>
 
-    <!-- Tekken 7 Section -->
-    <div class="game-section">
-        <img src="https://p325k7wa.twic.pics/high/tekken/tekken-7/00-page-setup/t7_game-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80" alt="Tekken 7 Cover">
-        <div class="game-info">
-            <h2>Tekken 7</h2>
-            <h3><a href="https://steamunlocked.net/d471103-tekken-7-free-v1-download" target="_blank">Download Tekken 7 | Bandai Namco</a></h3>
-            <p>This is a direct download link for Tekken 7. Scroll down and click on "Download". System requirements will be listed on the page.</p>
-            <p>To download: wait 15 seconds, then click on "Free Download". If it's a Heaven Uploads link, proceed. If not, close the tab and try again.</p>
-            <p>Contact: <strong>abhahaft60@gmail.com</strong></p>
-        </div>
-    </div>
-
-    <!-- Need for Speed Rivals Section -->
-    <div class="game-section">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZnLGyKMt9ZEKlU3kLfjLiZMtb7TXADwGjQ&s" alt="Need for Speed Rivals Cover">
-        <div class="game-info">
-            <h2>Need for Speed: Rivals</h2>
-            <h3><a href="https://steamunlocked.net/d35a16-need-for-speed-rivals-free-2021-download" target="_blank">Download Need for Speed: Rivals | EA Games</a></h3>
-            <p>This is a direct download link for Need for Speed: Rivals. Scroll down and click on "Download". System requirements will be listed on the page.</p>
-            <p>To download: wait 15 seconds, then click on "Free Download". If it's a Heaven Uploads link, proceed. If not, close the tab and try again.</p>
-            <p>Contact: <strong>abhahaft60@gmail.com</strong></p>
-        </div>
-    </div>
-
-    <!-- Call of Duty: Black Ops 4 Section -->
-    <div class="game-section">
-        <img src="https://www.ubuy.com.pk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFIZXMtcmNzUUwuX1NMMTUwMF8uanBn.jpg" alt="Call of Duty : Black Ops 4">
-        <div class="game-info">
-            <h2>Call of Duty: Black Ops 4</h2>
-            <h3><a href="https://steamunlocked.net/fa6560-call-of-duty-black-ops-4-free-download/" target="_blank">Download Call of Duty: Black Ops 4 | Activision</a></h3>
-            <p>This is a direct download link for Call of Duty: Black Ops 4. Scroll down and click on "Download". System requirements will be listed on the page.</p>
-            <p>To download: wait 15 seconds, then click on "Free Download". If it's a Heaven Uploads link, proceed. If not, close the tab and try again.</p>
-            <p>Contact: <strong>abhahaft60@gmail.com</strong></p>
-        </div>
-    </div>
-    <!-- TEKKEN 8 Section -->
+<!-- GTA V -->
 <div class="game-section">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDCjqWxVTGpmiVesMN6lgiE3kKZ9TXsKThg&s" alt="Tekken 8 Cover">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V Cover">
     <div class="game-info">
-        <h2>TEKKEN 8</h2>
-        <h3><a href="https://steamunlocked.net/fe7744-tekken-8-free-download/" target="_blank">Download Tekken 8 | BANDAI NAMCO</a></h3>
-        <p>This is a direct download link for Tekken 8. Scroll down and click on "Download". System requirements will be listed on the page.</p>
-        <p>To download: wait 15 seconds, then click on "Free Download". If it's a Heaven Uploads link, proceed. If not, close the tab and try again.</p>
-        <p>Contact: <strong>abhahaft60@gmail.com</strong></p>
+        <h2>Grand Theft Auto V</h2>
+        <h3><a href="https://steamunlocked.net/8dc7134-grand-theft-auto-v-free-v4-download" target="_blank">Download GTA V | Rockstar Games</a></h3>
+        <p>this is the direct link of the game. click on download button and scroll down...</p>
+        <div class="box">
+            <b>Install Size:</b> 110 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: Intel i5 / AMD FX<br>
+            RAM: 8 GB<br>
+            GPU: GTX 660 / R7 265
+        </div>
     </div>
 </div>
-    <div class="footer">
-        <h3>THANK YOU FOR CHOOSING US</h3>
+<!-- Tekken 7 -->
+<div class="game-section">
+    <img src="https://p325k7wa.twic.pics/high/tekken/tekken-7/00-page-setup/t7_game-thumbnail.jpg" alt="Tekken 7 Cover">
+    <div class="game-info">
+        <h2>Tekken 7</h2>
+        <h3><a href="https://steamunlocked.net/d471103-tekken-7-free-v1-download" target="_blank">Download Tekken 7 | Bandai Namco</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 60 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: Intel i3-4160<br>
+            RAM: 6 GB<br>
+            GPU: GTX 660
+        </div>
     </div>
+</div>
+
+<!-- Need for Speed Rivals -->
+<div class="game-section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZnLGyKMt9ZEKlU3kLfjLiZMtb7TXADwGjQ&s" alt="Need for Speed Rivals Cover">
+    <div class="game-info">
+        <h2>Need for Speed: Rivals</h2>
+        <h3><a href="https://steamunlocked.net/d35a16-need-for-speed-rivals-free-2021-download" target="_blank">Download Need for Speed: Rivals | EA Games</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 30 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: Intel i3<br>
+            RAM: 4 GB<br>
+            GPU: GTX 560
+        </div>
+    </div>
+</div>
+
+<!-- Call of Duty -->
+<div class="game-section">
+    <img src="https://www.ubuy.com.pk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFIZXMtcmNzUUwuX1NMMTUwMF8uanBn.jpg" alt="COD Black Ops 4">
+    <div class="game-info">
+        <h2>Call of Duty: Black Ops 4</h2>
+        <h3><a href="https://steamunlocked.net/fa6560-call-of-duty-black-ops-4-free-download/" target="_blank">Download Call of Duty</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 120 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: i5 2500K<br>
+            RAM: 8 GB<br>
+            GPU: GTX 970
+        </div>
+    </div>
+</div>
+
+<!-- Tekken 8 -->
+<div class="game-section">
+    <img src="https://images6.alphacoders.com/135/1359106.png" alt="Tekken 8 Cover">
+    <div class="game-info">
+        <h2>Tekken 8</h2>
+        <h3><a href="https://steamunlocked.net/fe7744-tekken-8-free-download/" target="_blank">Download Tekken 8 | BANDAI NAMCO</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 80 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: i5 6600K<br>
+            RAM: 8 GB<br>
+            GPU: GTX 1060
+        </div>
+    </div>
+</div>
+
+<!-- KAMLA -->
+<div class="game-section">
+    <img src="https://substackcdn.com/image/fetch/$s_!6al6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29be64ef-96fd-4a55-8f37-c72df077ad53.heic" alt="KAMLA Cover">
+    <div class="game-info">
+        <h2>KAMLA</h2>
+        <h3><a href="https://steamunlocked.org/kamla-free-download/" target="_blank">Download KAMLA</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 25 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: i3<br>
+            RAM: 4 GB<br>
+            GPU: GTX 750
+        </div>
+    </div>
+</div>
+
+<!-- FORZA -->
+<div class="game-section">
+    <img src="https://images.alphacoders.com/116/1168382.jpg" alt="Forza Horizon 5">
+    <div class="game-info">
+        <h2>FORZA HORIZON 5</h2>
+        <h3><a href="https://steamunlocked.org/forza-horizon-5-free-download/" target="_blank">Download Forza | Playground Games</a></h3>
+        <div class="box">
+            <b>Install Size:</b> 120 GB<br>
+            <b>System Requirements:</b><br>
+            CPU: i5 8400<br>
+            RAM: 16 GB<br>
+            GPU: GTX 1070
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h3>THANK YOU FOR CHOOSING US</h3>
+</div>
+
+<script>
+const searchInput=document.getElementById('searchInput');
+searchInput.addEventListener('input',()=>{
+    const value=searchInput.value.toLowerCase();
+    document.querySelectorAll('.game-section').forEach(sec=>{
+        const title=sec.querySelector('h2').innerText.toLowerCase();
+        sec.style.display=title.includes(value)?'flex':'none';
+    });
+});
+</script>
 
 </body>
 </html>
